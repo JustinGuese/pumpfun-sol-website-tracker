@@ -1,0 +1,8 @@
+services:
+  selenium:
+    image: selenium/standalone-firefox:latest
+    ports:
+      - '4444:4444'
+      - '7900:7900'
+    volumes:
+      - ./phantom_app-24.26.0.xpi:/phantom_app-24.26.0.xpi
